@@ -88,7 +88,6 @@ library DistributedStorage {
             )
         );
     }
-
     function deploy(bytes32 _struct) private {
         bytes memory slotcode = type(StorageUnit).creationCode;
         /* solium-disable-next-line */
@@ -245,7 +244,6 @@ contract GasPump {
 // File: contracts/interfaces/IERC20.sol
 
 pragma solidity ^0.5.10;
-
 
 interface IERC20 {
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
